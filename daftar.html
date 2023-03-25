@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="icon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAIS | WELCOME TO LAIS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="halaman-utama">
+            <img class="logo" src="logo.jpg">
+            <h1>Laboratory Assistant of Information System</h1>
+        </div>
+        
+        <div class="menu">
+            <ul>
+                <li><a href="head.html">Beranda</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="struktur.html">Struktur</a></li>
+                <li><a href="aturan.html">Aturan & Syarat</a></li>
+                <li><a href="daftar.html">Daftar</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </div>
+        <div class="halaman">
+            <h1>PENDAFTARAN ASLAB SI</h1>
+            <form class="isi-daftar" role="form" onsubmit="ASLAB(event);" autocomplete="off">
+                <div class="data">
+                    <label>Nama Lengkap</label><br>
+                    <input type="text" id="nama" placeholder="Masukan Nama Lengkap" required><br>
+                    <label>NIM</label><br>
+                    <input type="text" id="nim" placeholder="Masukan Nim" required><br>
+                    <label>Email</label><br>
+                    <input type="email" id="email" placeholder="Masukan Email" required><br>
+                    <label>No Hp</label><br>
+                    <input type="tel" id="telp" placeholder="Masukan No Hp" required><br>
+                    <label>Angkatan</label><br>
+                    <select id="angkatan">
+                        <option value="A19">2019</option>
+                        <option value="A20">2020</option>
+                        <option value="A21">2021</option>
+                    </select>
+                </div>
+                <div class="pilih">
+                    <label>Pilih Mata Kuliah : </label><br>
+                    <input type="radio" name="pilih" value="Algoritma Struktur Data" required />Algoritma Struktur Data<br>
+                    <input type="radio" name="pilih" value="Database Management System" required/>Database Management System<br>
+                    <input type="radio" name="pilih" value="Sistem Operasi" required />Sistem Operasi<br>
+                    <input type="radio" name="pilih" value="Desain UI/UX" required/>Desain UI/UX<br>
+                    <input type="radio" name="pilih" value="Pemograman Web" required />Pemograman Web<br>
+                    <input type="radio" name="pilih" value="Keamanan Informasi" required/>Keamanan Informasi<br>
+                    <input type="radio" name="pilih" value="Penggalian Data & Analitika Bisnis" required/>Penggalian Data & Analitika Bisnis<br>
+                </div>
+                <div class="file">
+                    <label>Masukan file KRS dan KHS (pdf)</label><br><input type="file" multiple="multiple" id="file" accept="application/pdf" required><br>
+                </div>
+                <div class="pesan">
+                    <label>Pesan</label><br>
+                    <textarea id="pesan" cols="50" rows="10" placeholder="Masukan pesan (alasan)"></textarea><br>
+                </div>
+                <div class="setuju">
+                    <input type="checkbox" id="note" value="Saya setuju dengan syarat dan aturan yang berlaku" required>Saya setuju dengan syarat dan aturan yang berlaku<br>
+                    <button type="reset" class="reset">Batal</button>
+                    <button type="submit" class="submit">Daftar</button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+<footer>
+    © 2023 - IT Development @Erni Veronica Sidabutar - All Rights Reserved  | 
+    <a  class="sosmed" href="https://instagram.com/praktikumsi.unmul?igshid=YmMyMTA2M2Y=/"><i class="fa-brands fa-instagram"></i></a>
+</footer>
+</body>
+<script src="script.js"></script>
+</html>

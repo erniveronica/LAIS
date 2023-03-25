@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Poppins:wght@400;500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif; 
+}
+
+footer{
+    text-align: center;
+}
+
+.sosmed{
+    color: rgb(8, 39, 72);
+}
+
+
+/* login dan registrasi */
+.akun{
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,.80), rgba(0,0,0,1)), url(logo.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 400px;
+    min-height: 400px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    padding: 30px 20px;
+}
+
+.title {
+    color: rgb(8, 39, 72);
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.login{
+    width: 100%;
+    height: 50px;
+}
+
+.login input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(8, 39, 72);
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent; 
+    outline: none;
+    transition: .3s; 
+    margin-bottom: 10px;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    border: none;
+    background: rgb(11, 48, 88);
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    background: rgb(8, 39, 72);
+}
+
+.text {
+    color: #111;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.text a {
+    text-decoration: none;
+    color:  rgb(11, 48, 88);
+}
+
+
+.info{
+    color: red;
+    font-size: 12px;
+    text-align: center;
+}
+/* halaman utama */
+.halaman-utama, .halaman{
+    background-color: rgb(8, 39, 72);
+    color: white;
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 10px;
+    text-align: center;
+}
+
+.logo{
+    width: 100px;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.menu{
+    background-color: rgb(11, 48, 88);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.menu ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+.menu ul li{
+    float: left;
+}
+
+.menu ul li a{
+    display: block;
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+    transition:all 0.3s ease-in-out;
+}
+
+.menu ul li a:hover{
+    background-color: aliceblue;
+    border-radius: 10px;
+    color: rgb(8, 39, 72);
+    cursor: pointer;
+}
+
+/* beranda */
+.isi-beranda, .isi-tugas{
+    margin: 0px 100px;
+    text-align: justify;
+}
+
+.isi-tugas{
+    margin-top: 50px;
+}
+
+/* tentang */
+.logo-about{
+    width: 300px;
+    border-radius: 300px;
+    border: 5px solid white;
+    margin: 0px 0px 30px 0px;
+    border-style: hidden;
+}
+
+.isi-tentang{
+    padding: 30px;
+    margin: 0px 100px;
+    color: darkslategrey;
+    background-color: aliceblue;
+    text-align: justify;
+    border: 10px solid rgb(12, 136, 158);
+    border-radius: 20px;
+    border-style: outset;
+}
+
+.isi-about{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.about-1, .about-2, .about-3, .about-4, .about-5, .about-6{
+    text-align: justify;
+    color: rgb(17, 17, 99);
+}
+
+.about-1 h2, .about-3 h2, .about-5 h2, .about-6 h2{
+    color: rgb(17, 17, 99);
+}
+
+.about-2 h2, .about-4 h2{
+    color: red;
+}
+
+.biru{
+    color: blue;
+    font-size: 20px;
+}
+
+.merah{
+    color: red;
+    font-size: 20px;
+}
+
+/* struktur */
+.gambar{
+    width: 300px;
+    border-radius: 300px;
+    border: 5px solid rgb(119, 253, 253);
+    margin: 20px;
+    border-style: dotted;
+}
+
+/* aturan dan syarat */
+.isi-aturan{
+    text-align: justify;
+    font-size: 18px;
+    padding: 20px;
+    margin: 0px 50px;
+    border: 5px solid white;
+    border-radius: 80px;
+}
+
+.isi-syarat{
+    text-align: justify;
+    font-size: 18px;
+    padding: 10px 30px;
+    margin: 0px 200px;
+    border: 5px solid rgb(119, 253, 253);
+    border-radius: 80px;
+    border-style: dashed;
+}
+
+/* daftar */
+.isi-daftar{
+    background-color: white;
+    color: black;
+    text-align: justify;
+    padding: 50px 100px;
+    margin: 0px 150px;
+    font-size: 20px;
+    border-radius: 100px;
+    border: 10px solid rgb(12, 136, 158);
+}
+
+.data input{
+    font-size: 15px;
+    padding: 5px;
+    width: 300px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+select{
+    font-size: 15px;
+    padding: 10px;
+    width: 30vh;
+    margin-bottom: 20px;
+}
+
+.pilih, .file{
+    margin-bottom: 20px;
+}
+
+.pilih input{
+    width: 15px;
+    height: 15px;
+}
+
+.pesan textarea{
+    width: 500px;
+    height: 150px;
+}
+
+.setuju button{
+    margin-top: 20px;
+    padding: 5px;
+    width: 150px;
+    width: 80px;
+    font-size: 15px;
+} 
+/* data pendaftar */
+table{
+    background-color: black;
+}
+
+th,td{
+    background-color: rgb(40, 83, 130);
+    color: white;
+    padding: 10px;
+}
+
+
+/* responsive */
+@media only screen and (min-width: 240px) and (max-width: 580px){
+    .menu{
+        font-size: 15px;
+    }
+
+    .isi-beranda, .isi-tugas{
+        padding: 20px;
+        margin: auto;
+    }
+
+    .isi-tentang{
+        margin: auto;
+    }
+
+    .gambar{
+        width: 200px;
+        border-radius: 200px;
+    }
+
+    .isi-aturan, .isi-syarat{
+        margin: 0px 10px;
+        padding: 10px;
+        border-radius: 50px;
+        font-size: 15px;
+    }
+
+    .isi-daftar{
+        margin: auto;
+        padding: 30px;
+        font-size: 13px;
+        border-radius: 50px;
+    }
+
+    .data input, select{
+        font-size: 12px;
+        width: auto;
+    }
+
+    .pilih input{
+        margin: auto;
+        width: auto;
+        height: auto;
+    }
+
+    .pesan textarea{
+        width: 200px;
+        height: 150px;
+        font-size: 13px;
+    }
+
+    table,th,td{
+        padding: 0px;
+        font-size: 7.5px;
+    }
+} 
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .menu{
+        font-size: 18px;
+    }
+
+    .isi-tentang{
+        margin: 0px 50px;
+    }
+
+    .isi-syarat{
+        margin: 0px 100px;
+    }
+    
+    .isi-daftar{
+        margin: 0px 50px;
+        border-radius: 50px;
+    }
+
+    .data input, select{
+        width: auto;
+    }
+    .pesan textarea{
+        width: 350px;
+    }
+    table,th,td{
+        padding: 0px;
+        font-size: 13px;
+    }
+}
